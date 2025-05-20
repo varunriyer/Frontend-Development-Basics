@@ -26,6 +26,14 @@ p {
     /* This is an example of a comment in CSS */
 }
 
+pre {
+    border: 2px dashed green;
+    outline: brown solid 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
 * {
     margin: 10;
     padding: 10;
