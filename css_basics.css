@@ -12,3 +12,9 @@ p {
     font-size: 20px;
     color: red;
 }
+
+#para1 {
+    color: brown;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+}
