@@ -18,3 +18,8 @@ p {
     text-align: right;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.center {
+    text-align: center;
+    color: yellow;
+}
