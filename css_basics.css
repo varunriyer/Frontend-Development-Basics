@@ -23,3 +23,10 @@ p {
     text-align: center;
     color: yellow;
 }
+
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
