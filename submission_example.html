@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Submission (No PHP)</title>
+</head>
+
+<body>
+
+    <h2>Form Submission Without PHP</h2>
+
+    <!-- Your Form -->
+    <form id="myForm" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- "Iframe-like" output area -->
+    <hr>
+    <h3>Submitted Data:</h3>
+    <div id="output" style="border:1px solid gray; padding:10px; min-height:50px;"></div>
+
+    <!-- JavaScript to handle form -->
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            // Get the values from the form
+            const fname = document.getElementById("fname").value;
+            const lname = document.getElementById("lname").value;
+
+            // Display inside the output div
+            document.getElementById("output").innerHTML =
+                `<strong>First Name:</strong> ${fname}<br><strong>Last Name:</strong> ${lname}`;
+        });
+    </script>
+
+</body>
+
+</html>
