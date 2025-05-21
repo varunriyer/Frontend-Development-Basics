@@ -27,3 +27,15 @@ $(function () {
         alert("Shouldn't have stopped clicking");
     });
 });
+
+$(function () {
+    $(".hover-test").hover(function () {
+        $(this).css("background-color", "yellow");
+    },
+        function () {
+            $(this).css("background-color", "white");
+        }
+    );
+});
+
+
