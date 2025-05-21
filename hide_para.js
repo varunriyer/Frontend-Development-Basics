@@ -38,4 +38,9 @@ $(function () {
     );
 });
 
+$(function () {
+    $("input").focus(function () {
+        $(this).css("background-color", "green");
+    });
+});
 
