@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <title>Hide Paragraphs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("p").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>This is a heading</h2>
+    <p>This is an unwanted paragraph</p>
+    <pre>This looks like a para but is actually pre :)</pre>
+    <button>Click on me to hide paragraphs</button>
+</body>
+
+</html>
