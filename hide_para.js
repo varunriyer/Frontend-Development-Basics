@@ -12,7 +12,7 @@ $(function () {
 
 $(function () {
     $("#spooky").mouseleave(function () {
-        alert("Who asked you to leave?")
+        $(this).text("Who asked you to leave?")
     });
 });
 
@@ -46,4 +46,16 @@ $(function () {
         $(this).css("background-color", "yellow");
     });
 });
-
+$(function () {
+    $(".multiple").on({
+        mouseenter: function () {
+            $(this).css("background-color", "lightgray");
+        },
+        mouseleave: function () {
+            $(this).css("background-color", "lightblue");
+        },
+        click: function () {
+            $(this).css("background-color", "yellow");
+        }
+    });
+});
