@@ -61,13 +61,23 @@ $(function () {
 });
 
 $(function () {
-    $("button").click(function () {
+    $("#custom-button").click(function () {
         $("#toggle-test").toggle();
     });
 });
 
 $(function () {
     $("#animate").click(function () {
-        $("div").animate({ left: '250px' });
+        $("#custom-div1").animate({ left: '250px' });
+    });
+});
+$(function () {
+    $("#custom-anime").click(function () {
+        $("#custom-div2").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
     });
 });
