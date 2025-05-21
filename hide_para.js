@@ -65,3 +65,9 @@ $(function () {
         $("#toggle-test").toggle();
     });
 });
+
+$(function () {
+    $("#animate").click(function () {
+        $("div").animate({ left: '250px' });
+    });
+});
